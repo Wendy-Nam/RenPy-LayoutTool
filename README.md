@@ -6,6 +6,14 @@
 
 The Ren'Py Layout Tool helps developers position images and UI elements on the screen by dragging them. This project is currently in **beta**, so there may be changes or updates based on user feedback.
 
+### ✨ Features
+- **Draggable, trackable coordinates**: Easily drag and drop images while tracking their coordinates in real-time.
+- **Loads files and Ren'Py images**: Supports both direct image file paths and Ren'Py image objects.
+- **Semi-transparent filter with light/dark toggle**: Toggle between light and dark semi-transparent filters to adjust the visibility.
+- **Highlights selected images**: Highlights images when clicked or dragged for easy selection and manipulation.
+- **Multiple asset placements**: Add multiple images or UI elements to the layout simultaneously.
+- **Deletes images via drag to trash bin**: Drag images to the trash bin to remove them from the layout.
+
 ## Outline Shader Notice
 
 We are currently using **outline shader effects** in this project. Make sure the outline shaders are properly set up in your project for consistent visuals. 
