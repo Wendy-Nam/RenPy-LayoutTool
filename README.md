@@ -2,9 +2,14 @@
 
 ![Version: Beta](https://img.shields.io/badge/Version-Beta-blue) ![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
+> Instantly Preview and Place Images in Ren'Py
+- Load new images directly into your current scene as overlays, making it easy to visualize and adjust their positions without leaving the game.
+- Note: This tool is for previewing purposes only. It doesn't add images directly to the code but helps you assess the placement and suitability of multiple assets before finalizing your scene.
+
 ## Overview
 
 The Ren'Py Layout Tool helps developers position images and UI elements on the screen by dragging them. This project is currently in **beta**, so there may be changes or updates based on user feedback.
+
 
 ### ✨ Features
 - **Draggable, trackable coordinates**: Easily drag and drop images while tracking their coordinates in real-time.
