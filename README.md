@@ -42,7 +42,7 @@ default item_hover_trans = glow_outline(12, "#f5b5c0", num_passes=3)
 
 The `layout_tool` in Ren'Py allows you to visually position images or UI elements on the screen by dragging them around. The tool temporarily pauses interactions like dialog playback, allowing you to fine-tune your layout.
 
-## 🛠️ Installation Guide:
+## 🛠️ Installation Guide
 
 1. **Add `bin.png` Image:**
    - Place the `bin.png` image file inside your game's `images` directory.
@@ -62,9 +62,9 @@ The `layout_tool` in Ren'Py allows you to visually position images or UI element
    default item_hover_trans = None
 
 4. **Start the Game:**
-    - Run your Ren'Py game and press L to open the layout tool, anywhere in your game.
+    - Run your Ren'Py game and press `L` to open the layout tool, anywhere in your game.
 
-## 🔧 Usage Instructions:
+## 🔧 Usage Instructions
 
 ### 1. Open the Tool:
 Press `L` to open the layout tool. To exit and return to normal game interactions, press `ESC`.
