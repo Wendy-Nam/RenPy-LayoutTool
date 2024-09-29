@@ -3,8 +3,10 @@
 ![Version: Beta](https://img.shields.io/badge/Version-Beta-blue) ![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
 > Instantly Preview and Place Images in Ren'Py
-- Load new images directly into your current scene as overlays, making it easy to visualize and adjust their positions without leaving the game.
-- Note: This tool is for previewing purposes only. It doesn't add images directly to the code but helps you assess the placement and suitability of multiple assets before finalizing your scene.
+- Load new images directly into your current scene as overlays
+   - making it easy to visualize and adjust their positions without leaving the game.
+- This tool is for previewing purposes only.
+   - It doesn't add images directly to the code but helps you assess the placement and suitability of multiple assets before finalizing your scene.
 
 ## Overview
 
