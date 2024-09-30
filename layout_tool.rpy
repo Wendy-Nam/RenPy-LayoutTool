@@ -448,3 +448,14 @@ init 999 python:
             if self.enter_callback:
                 self.enter_callback()
             raise renpy.IgnoreEvent()
+
+
+################################################################################
+
+## Exclude this tool on build, to avoid any potential issues.
+
+init python:
+    build.classify("**layout_tool.rpy", None)
+    build.classify("**layout_tool.rpyc", None)
+
+################################################################################
