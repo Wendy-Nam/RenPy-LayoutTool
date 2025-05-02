@@ -1,8 +1,16 @@
 # Ren'Py Layout Tool
+> Instantly Preview and Place Images in Ren'Py
+
+> Currently, this version is only available on GitHub (not yet on Itch.io).
 
 ![Version: Beta](https://img.shields.io/badge/Version-Beta-blue) ![License: MIT](https://img.shields.io/badge/License-MIT-green)
+![Image](https://github.com/user-attachments/assets/50270935-7d56-4e37-beda-07d35281df5e)
 
-> Instantly Preview and Place Images in Ren'Py
+### Preview 
+- Video1 : https://youtu.be/f3nDPWE2CIc
+- Video2 : https://youtu.be/MNqknAaeDuE
+
+
 - Load new images directly into your **`current scene`** as **overlays**
    - making it easy to visualize and adjust their positions without leaving the game.
 - This tool is for **previewing purposes** only.
