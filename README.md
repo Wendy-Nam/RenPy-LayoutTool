@@ -34,20 +34,7 @@ The Ren'Py Layout Tool helps developers position images and UI elements on the s
 
 We are currently using **outline shader effects** in this project. Make sure the outline shaders are properly set up in your project for consistent visuals. 
 
-**Outline Shader Assets by FeniksDev**  
-🔗 [https://feniksdev.itch.io/outline-shader-renpy](https://feniksdev.itch.io/outline-shader-renpy)
 
-- If the shaders are not required, we **strongly recommend** changing their value to `None`:
-
-```renpy
-# If you don't want to use the outlines, change the value to "None"
-default item_active_trans = glow_outline(12, "#11d427", num_passes=6)
-default item_hover_trans = glow_outline(12, "#f5b5c0", num_passes=3)
-
-# To disable the outlines:
-# define item_active_trans = None
-# define item_hover_trans = None
-```
 
 # 🖼️ Layout Tool Guide
 
@@ -55,25 +42,30 @@ The `layout_tool` in Ren'Py allows you to visually position images or UI element
 
 ## 🛠️ Installation Guide
 
-1. **Add `bin.png` Image:**
-   - Place the `bin.png` image file inside your game's `images` directory.
-   - If you want to place the `bin.png` image file in a different location, you'll need to update the path in the `layout_tool.rpy` file.
-   
-   To modify the path, go to the top of the `layout_tool.rpy` file and update line 5 as follows:
-   ```renpy
-   define bin_img = './images/bin.png'
-    ```
-2. **Place `layout_tool.rpy` in Your Project:**
-   - You can place the `layout_tool.rpy` file **anywhere** inside your Ren'Py project directory. It does not require a specific location.
+1.  Place the folder named `layout-visualizer` directly into your game's root directory.
+    * Ensure the `bin.png` image file and the `layout_tool.rpy` file are located inside this `layout-visualizer` folder.
 
-3. **Check for Optional Outline Shader:**
-   - The tool uses an outline shader by default. If you don't want to use the outlines, change the following values in `layout_tool.rpy` to `None`:
-   ```renpy
-   default item_active_trans = None
-   default item_hover_trans = None
+2.  **Start the Game:**
+    * Run your Ren'Py game. You can access the layout tool from anywhere in your game by pressing the `L` key.
 
-4. **Start the Game:**
-    - Run your Ren'Py game and press `L` to open the layout tool, anywhere in your game.
+### **Optional: Enable Fen's Outline Shader (for video-like effect):**
+   🔗 [https://feniksdev.itch.io/outline-shader-renpy](https://feniksdev.itch.io/outline-shader-renpy)
+
+   * This tool optionally supports Fen's outline shader. For a video-like effect, download FeniksDev's Outline Shader asset. To enable it, find these lines in `layout_tool.rpy` and remove the `#` at the beginning of each line:
+      
+        ```renpy
+        # default item_active_trans = glow_outline(12, "#11d427", num_passes=6)
+        # default item_hover_trans = glow_outline(12, "#f5b5c0", num_passes=3)
+        ```
+   * If you prefer not to use the outline shader, make sure these lines are either commented out (with a `#` at the start) or set to `None`:
+        ```renpy
+        default item_active_trans = None
+        default item_hover_trans = None
+        ```
+
+### ⚠️ File Relocation Notice
+
+* If you later move the `layout_tool.rpy` file or the `bin.png` image, you'll need to update the image path within `layout_tool.rpy`. Open the file and check the `define bin_img` line at the top to ensure the path to `bin.png` is correct.
 
 ## 🔧 Usage Instructions
 

@@ -2,7 +2,7 @@
 
 init:
     # modify this line as the path to the bin!
-    define bin_img = './images/bin.png' 
+    define bin_img = './layout-visualizer/bin.png' 
     
     # opacity of the bg filter!
     define light_mode_opacity = 0.5 
@@ -14,11 +14,12 @@ init:
     # OURLINE SHADER USED HERE
     # https://feniksdev.itch.io/outline-shader-renpy
 
-    default item_active_trans = glow_outline(12, "#11d427", num_passes=6)
-    default item_hover_trans = glow_outline(12, "#f5b5c0", num_passes=3)
+    # default item_active_trans = glow_outline(12, "#11d427", num_passes=6)
+    # default item_hover_trans = glow_outline(12, "#f5b5c0", num_passes=3)
+    
     # If outlines are not needed, change these to None
-    # define item_active_trans = None
-    # define item_hover_trans = None
+    define item_active_trans = None
+    define item_hover_trans = None
 
 # Layout Tool Guide
 # -----------------
@@ -421,7 +422,7 @@ init python:
 init 999 python:    
     class CustomInputValue(FieldInputValue):
         def __init__(self, object, field, default=False, set_callback=None,
-                     enter_callback=None, starting_value=None, disable_on_enter=False, strip_on_close=True):
+            enter_callback=None, starting_value=None, disable_on_enter=False, strip_on_close=True):
             self.object = object
             self.field = field
             self.default = default
