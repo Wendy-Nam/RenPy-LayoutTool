@@ -5,6 +5,8 @@
 
 > **A visual preview editor to help you accurately place images and UI elements on screen in Ren'Py.**
 
+> [Now available on Itch.io](https://seo-a-nam.itch.io/layouttools)
+
 <img src="https://github.com/user-attachments/assets/50270935-7d56-4e37-beda-07d35281df5e" width="400"/>
 
 
