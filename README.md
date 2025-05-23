@@ -19,8 +19,9 @@
 
 ## Overview
 
-The Ren'Py Layout Tool helps developers position images and UI elements on the screen by dragging them. This project is currently in **beta**, so there may be changes or updates based on user feedback.
+The Ren'Py Layout Tool helps developers position images and UI elements on the screen by dragging them. 
 
+This project is currently in **beta**, so there may be changes or updates based on user feedback.
 
 ### ✨ Features
 - **Draggable, trackable coordinates**: Easily drag and drop images while tracking their coordinates in real-time.
@@ -29,12 +30,6 @@ The Ren'Py Layout Tool helps developers position images and UI elements on the s
 - **Highlights selected images**: Highlights images when clicked or dragged for easy selection and manipulation.
 - **Multiple asset placements**: Add multiple images or UI elements to the layout simultaneously.
 - **Deletes images via drag to trash bin**: Drag images to the trash bin to remove them from the layout.
-
-## Outline Shader Notice
-
-We are currently using **outline shader effects** in this project. Make sure the outline shaders are properly set up in your project for consistent visuals. 
-
-
 
 # 🖼️ Layout Tool Guide
 
@@ -47,25 +42,6 @@ The `layout_tool` in Ren'Py allows you to visually position images or UI element
 
 2.  **Start the Game:**
     * Run your Ren'Py game. You can access the layout tool from anywhere in your game by pressing the `L` key.
-
-### **Optional: Enable Fen's Outline Shader (for video-like effect):**
-   🔗 [https://feniksdev.itch.io/outline-shader-renpy](https://feniksdev.itch.io/outline-shader-renpy)
-
-   * This tool optionally supports Fen's outline shader. For a video-like effect, download FeniksDev's Outline Shader asset. To enable it, find these lines in `layout_tool.rpy` and remove the `#` at the beginning of each line:
-      
-        ```renpy
-        # default item_active_trans = glow_outline(12, "#11d427", num_passes=6)
-        # default item_hover_trans = glow_outline(12, "#f5b5c0", num_passes=3)
-        ```
-   * If you prefer not to use the outline shader, make sure these lines are either commented out (with a `#` at the start) or set to `None`:
-        ```renpy
-        default item_active_trans = None
-        default item_hover_trans = None
-        ```
-
-### ⚠️ File Relocation Notice
-
-* If you later move the `layout_tool.rpy` file or the `bin.png` image, you'll need to update the image path within `layout_tool.rpy`. Open the file and check the `define bin_img` line at the top to ensure the path to `bin.png` is correct.
 
 ## 🔧 Usage Instructions
 
@@ -80,6 +56,7 @@ Once the image appears, you can drag it around the screen to position it. The im
 
 ### 4. Remove Images:
 To remove an image, simply drag it to the trash icon located next to the search bar (top-right corner).
+
 
 ## ⚠️ Important Notes:
 If the image is inside a container (e.g., `frame`, `vbox`, `hbox`, `viewport`) or already has position-related properties, the final position shown in the tool might not reflect its true placement due to overlapping layout rules.
@@ -100,6 +77,25 @@ screen example_fixed:
 ```
 
 In this example, the image will be positioned at `xpos 400` and `ypos 300` and won't be affected by other layout rules.
+
+### **Optional: Enable Fen's Outline Shader (for video-like effect):**
+   🔗 [https://feniksdev.itch.io/outline-shader-renpy](https://feniksdev.itch.io/outline-shader-renpy)
+
+   * This tool optionally supports Fen's outline shader. For a video-like effect, download FeniksDev's Outline Shader asset. To enable it, find these lines in `layout_tool.rpy` and remove the `#` at the beginning of each line:
+      
+        ```renpy
+        # default item_active_trans = glow_outline(12, "#11d427", num_passes=6)
+        # default item_hover_trans = glow_outline(12, "#f5b5c0", num_passes=3)
+        ```
+   * If you prefer not to use the outline shader, make sure these lines are either commented out (with a `#` at the start) or set to `None`:
+        ```renpy
+        default item_active_trans = None
+        default item_hover_trans = None
+        ```
+
+### File Relocation
+
+* If you later move the `layout_tool.rpy` file or the `bin.png` image, you'll need to update the image path within `layout_tool.rpy`. Open the file and check the `define bin_img` line at the top to ensure the path to `bin.png` is correct.
 
 ## Notice
 
