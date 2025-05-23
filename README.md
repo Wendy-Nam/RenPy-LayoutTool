@@ -26,29 +26,14 @@ it doesn't directly alter your code but helps you evaluate asset placement befor
 
 ## ✨ Features
 
-- **Draggable Coordinate Tracking:** 
-
-   Real-time coordinate tracking while dragging images.
-
-- **File & Ren'Py Image Loading:**
-
-   Supports both direct image file paths and Ren'Py image objects.
-
-- **Semi-transparent Filter (Light/Dark Toggle):** 
-   
-   Distinguish the preview view on the current screen.
-
-- **Selected Image Highlight:** 
-
-   Highlights images on click/drag for easy identification (only with outline_shader).
-
-- **Multiple Asset Placement:** 
-   
-   Add multiple images or UI elements to the preview screen simultaneously.
-
-- **Delete Images via Drag to Trash Bin:** 
-
-   Remove images from preview mode by dragging to the trash icon.
+- ⌨️ **Keyboard Shortcuts** – Press `L` to open, `ESC` to close. No reloads needed.
+- 🛠️ **Runs In-Game** – Fully integrated into Ren'Py. No external tools required.
+- 🖱️ **Drag & Track** – See real-time coordinates while moving elements.
+- 📂 **Flexible Loading** – Supports both file paths and Ren'Py image objects.
+- 🌗 **Light/Dark Overlay** – Toggle semi-transparent preview background.
+- ✨ **Image Highlighting** – Outlines selected items (with outline shader).
+- 🖼️ **Multi-Element Support** – Add multiple images or UI elements at once.
+- 🗑️ **Drag to Delete** – Remove items by dropping them into the trash bin.
 
 ---
 
