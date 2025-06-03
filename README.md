@@ -1,16 +1,19 @@
-# Ren'Py Layout Tool
-
 ![Version: Beta](https://img.shields.io/badge/Version-Beta-blue) 
 ![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
+# 📌 Available on Itch.io
+
+### [seo-a-nam.itch.io/layouttools](https://seo-a-nam.itch.io/layouttools)  
+> Most users download it here. Troubleshooting and updates are also handled on Itch.io.
+
+# 💡 Overview 
+
+## Ren'Py Layout Tool
+
 > **A visual preview editor to help you accurately place images and UI elements on screen in Ren'Py.**
 
-> [Now available on Itch.io](https://seo-a-nam.itch.io/layouttools)
 
 <img src="https://github.com/user-attachments/assets/50270935-7d56-4e37-beda-07d35281df5e" width="400"/>
-
-
-## 📝 Overview
 
 This tool allows you to load new images as overlays onto your current scene, making it easy to visualize and adjust their positions without exiting the game. 
 
@@ -19,6 +22,7 @@ It's for **previewing purposes only**;
 it doesn't directly alter your code but helps you evaluate asset placement before finalizing your scene.
 
 > ⚠️ This project is currently in **beta** and may receive updates based on user feedback.
+
 
 
 ## 📺 Demo Videos (Preview)
